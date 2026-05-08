@@ -80,10 +80,11 @@ public class SpawnInNavMeshArea : MonoBehaviour
 
                 LevelManager.Instance.RegisterSpawn();
 
-                var movement = enemy.GetComponent<BasicEnemyMovement>();
-                if (movement != null)
+                EnemyBrain brain = enemy.GetComponent<EnemyBrain>();
+
+                if (brain != null)
                 {
-                    movement.SetTargets(targetProvider.targets);
+                    brain.SetTargets(targetProvider.targets);
                 }
 
                 //Debug.Log("Spawned at " + hit.position);

@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 1995656133029530521}
   - component: {fileID: 1562040189903992116}
   - component: {fileID: 2782737384534519092}
+  - component: {fileID: 6431727474450203935}
   m_Layer: 0
   m_Name: SkeletonSoldier
   m_TagString: Untagged
@@ -152,7 +153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44706098d0755fa4fb9de9b3ceebfcfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicEnemyMovement
-  targets: []
 --- !u!114 &5828029374486294321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,3 +222,19 @@ MonoBehaviour:
   attackCooldown: 10
   attackDuration: 1
   damage: 1
+--- !u!114 &6431727474450203935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3206815002733146974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d73956d2dfc7cc749ad91a5a417522a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBrain
+  targets: []
+  aggroDuration: 5
+  playerDetectRange: 10
+  wanderRadius: 6

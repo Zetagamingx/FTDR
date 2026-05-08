@@ -1108,7 +1108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpawnInNavMeshArea
   category: Weak
   targetProvider: {fileID: 2036862866}
-  levelManager: {fileID: 0}
+  levelManager: {fileID: 140956446}
   radius: 10
   maxAttempts: 20
 --- !u!4 &437119075
